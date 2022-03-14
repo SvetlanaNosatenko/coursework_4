@@ -2,13 +2,13 @@ from functools import wraps
 from typing import Dict
 
 from flask import Flask, render_template, request, url_for
-from werkzeug import redirect
+from werkzeug.utils import redirect
 
-from arena import Arena
-from classes import hero_classes
-from equipment import EquipmentData
-from get_data import _data_equipment
-from unit import Player, BaseUnit, Enemy
+from sky_wars.arena import Arena
+from sky_wars.classes import hero_classes
+from sky_wars.equipment import EquipmentData
+from sky_wars.get_data import _data_equipment
+from sky_wars.unit import Player, BaseUnit, Enemy
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False

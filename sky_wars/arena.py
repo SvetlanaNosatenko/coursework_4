@@ -1,5 +1,5 @@
 from typing import Optional
-from unit import BaseUnit
+from sky_wars.unit import BaseUnit
 
 
 class SingletonMeta(type):

@@ -1,6 +1,8 @@
 version: "3.9"
 services:
   webapp:
+    build:
+      context: ../
     image: nosatenko/game
     command: gunicorn sky_wars.app:app -b 0.0.0.0:5000
     restart: always

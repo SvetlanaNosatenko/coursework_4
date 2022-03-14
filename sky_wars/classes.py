@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from skills import Skill, skill_kick, skill_sting
+from sky_wars.skills import Skill, skill_kick, skill_sting
 
 
 @dataclass
